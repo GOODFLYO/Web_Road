@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>测试</title>
+  </head>
+  <body>
+    <script>
+      function login() {
+        let username = document.getElementById("username").value;
+        let password = "123";
+        // let obj = new XMLHttpRequest();
+        // obj.open("post", "test");
+        // obj.send(username);
+        // console.log(obj);
+        alert(document.getElementsByTagName("button")[0].innerHTML);
+        document.getElementsByTagName("button")[0].innerHTML = "change";
+      }
+    </script>
+    <form>
+      <input type="text" id="username" placeholder="请输入账号" />
+      <input id="password" type="password" placeholder="请输入密码" />
+      <button onclick="login()">提交</button>
+    </form>
+
+    <input type="checkbox" name="items" value="足球" />足球
+  </body>
+</html>
