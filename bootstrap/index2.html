@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-3.4.1/dist/css/bootstrap.min.css" />
+    <style>
+      .row div:nth-child(3) {
+        height: 50px;
+        background-color: pink;
+      }
+      .row div:nth-child(1) {
+        height: 50px;
+        background-color: red;
+      }
+      .row div {
+        height: 50px;
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 栅格系统响应系统 可以隐藏页面内容的情况 -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-3 visible-md">左侧</div>
+        <div class="col-xs-3">右侧</div>
+        <div class="col-xs-3 hidden-md">我会变魔术哦</div>
+        <div class="col-xs-3">右侧</div>
+      </div>
+    </div>
+  </body>
+</html>

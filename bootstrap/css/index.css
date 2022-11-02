@@ -1,0 +1,28 @@
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+}
+header {
+  padding-left: 0 !important;
+}
+header .logo img {
+  width: 100%;
+  margin: 0;
+  height: 100%;
+}
+header .nav {
+  background-color: gray;
+  border-bottom: 1px solid #ccc;
+}
+header ul {
+  list-style: none;
+  padding: 0;
+}
+header ul a {
+  color: gray;
+  text-decoration: noen;
+}
+header ul a :hover {
+  text-decoration: none;
+}

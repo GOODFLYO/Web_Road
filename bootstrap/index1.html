@@ -6,9 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="bootstrap-3.4.1/dist/css/bootstrap.min.css" />
+    <style>
+        .row div{
+            height: 50px;
+            background-color:pink;
+        }
+    </style>
 </head>
 <body>
-    
+    <!-- 盒子推拉顺序 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-lg-push-8">左侧</div>
+            <div class="col-md-8 col-lg-pull-4">右侧</div>
+        </div>
+    </div>
+
     
 </body>
 </html>
