@@ -1,0 +1,29 @@
+/* @media screen and (max-width: ) {
+} */
+
+* {
+  /* 消去左右边距 */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+
+.box {
+    margin-top: 30vh;
+    margin-left: 40vw;
+}
+
+.tips {
+}
+
+.leaves {
+    
+}
+
+
