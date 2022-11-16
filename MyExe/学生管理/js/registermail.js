@@ -19,8 +19,8 @@ window.onload = () => {
     if (!mail.value.match(pattern)) {
       // console.log(mail.value);
       alert("邮箱有误，请重试");
-      //   window.location.href = "#"
-      window.navigator("#");
+        window.location.href = "https://goodflo.github.io";
+      // window.navigator("#");
     }
   });
 };
