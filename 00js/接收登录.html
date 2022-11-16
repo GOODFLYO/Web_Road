@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>接收登录</title>
+</head>
+<body>
+    <div>
+        
+    </div>
+
+    <script>
+        console.log(location.search);
+        //去掉问号
+        // substr
+        var params = location.search.substr(1);
+        console.log(params);
+        var a = params.split('=');
+        console.log(a);
+        var div = document.getElementsByTagName('div')[0];
+        div.innerHTML =decodeURI(a[1]) +"welcome";
+        
+        
+        
+    </script>
+    <div>
+        
+    </div>
+    
+</body>
+</html>
