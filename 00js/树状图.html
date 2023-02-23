@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@4.9.0/dist/echarts.min.js"></script>
+    <script>
+      // 定义数据
+      var data = [
+        { name: "A", value: 100 },
+        { name: "B", value: 200 },
+        { name: "C", value: 300 },
+        { name: "D", value: 400 },
+        { name: "E", value: 500 },
+      ];
+
+      // 定义画布的宽度和高度
+      var width = 400;
+      var height = 300;
+
+      // 定义柱状图的宽度和间隔
+      var barWidth = 40;
+      var barPadding = 10;
+
+      // 定义画布
+      var svg = d3
+        .select("body")
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+      // 定义柱状图的数据和颜色比例尺
+      var xScale = d3
+        .scaleBand()
+        .domain(
+          data.map(function (d) {
+            return d.name;
+          })
+        )
+        .range([0, width]);
+      var yScale = d3
+        .scaleLinear()
+        .domain([
+          0,
+          d3.max(data, function (d) {
+            return d.value;
+          }),
+        ])
+        .range([0, height]);
+      var colorScale = d3.scaleOrdinal(d3.schemeCategory10);
+
+      // 绘制柱状图
+      svg
+        .selectAll(".bar")
+        .data(data)
+        .enter()
+        .append("rect")
+        .attr("class", "bar")
+        .attr("x", function (d) {
+          return xScale(d.name);
+        })
+        .attr("y", function (d) {
+          return height - yScale(d.value);
+        })
+        .attr("width", xScale.bandwidth())
+        .attr("height", function (d) {
+          return yScale(d.value);
+        })
+        .style("fill", function (d) {
+          return colorScale(d.name);
+        });
+    </script>
+  </body>
+</html>
