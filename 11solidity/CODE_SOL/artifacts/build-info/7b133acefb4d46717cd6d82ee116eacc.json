@@ -1,0 +1,83 @@
+{
+	"id": "7b133acefb4d46717cd6d82ee116eacc",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.17",
+	"solcLongVersion": "0.8.17+commit.8df45f5f",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"HOME_3.sol": {
+				"content": "\r\n/*\r\n一、通用要求\r\n开源协议标识符：MIT\r\n编译器版本：不小于0.8.16\r\n\r\n二、字符串处理库的实现\r\nSolidity文件名：StringUtil.sol\r\n库名：StringUtil\r\n功能：\r\n1、库中定义枚举类型CompareResult，成员为Equal、Less、Greater、Invalid\r\n2、提供字符串比较函数\r\n2.1 函数原型为function compare(string memory str1, string memory str2) public pure returns(CompareResult)；\r\n2.2 compare函数返回值是Equal的条件：输入参数字符串str1与字符串str2内容相同；\r\n2.3 compare函数返回值是Less的条件：从str1、str2的第一个字符开始比较，一旦str1的字符ascii码值小于str2对应位置的字符ascii码值；或者str1的长度小于str2的长度且字符串str1与字符串str2[0, str1.length]字符串内容相同；\r\n2.4 compare函数返回值是Greater的条件：从str1、str2的第一个字符开始比较，一旦str1的字符ascii码值大于str2对应位置的字符ascii码值；或者str1的长度大于str2的长度且字符串str2与字符串str1[0, str2.length]字符串内容相同；\r\n2.5 compare函数返回值是Invalid的条件：输入参数字符串str1、字符串str2任意一个参数是空字符串。\r\n\r\n三、父合约的修改\r\nSolidity文件名：HelloWorld.sol\r\n合约名：HelloWorld\r\n功能：\r\n将HelloWorld.myFirstHelloWorld修改为vitual关键字修饰的虚函数。\r\n\r\n四、继承合约的实现\r\nSolidity文件名：HelloWorld.sol\r\n继承合约名：HelloMyWorld\r\n功能：\r\n1、HelloMyWorld合约继承HelloWorld合约\r\n2、HelloMyWorld合约提供myFirstHelloWorld，该函数\r\n2.1 覆盖合约HelloWorld的函数myFirstHelloWorld；\r\n2.2 调用父合约的函数myFirstHelloWorld获取字符串；\r\n2.3 比较获取的字符串是否等于\"Hello World! My name is Zhang San.\"，如果不相等则在获取的字符串后面连接字符串\" My class number is xxx.\"以生成新的字符串，其中xxx为自己的三位数阿拉伯数字班号，新生成的字符串作为函数返回值返回；\r\n2.4 如果相等，则函数直接返回字符串\"It's not me!\"。\r\n*/"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"errors": [
+			{
+				"component": "general",
+				"errorCode": "1878",
+				"formattedMessage": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> HOME_3.sol\n\n",
+				"message": "SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "HOME_3.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			},
+			{
+				"component": "general",
+				"errorCode": "3420",
+				"formattedMessage": "Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.17;\"\n--> HOME_3.sol\n\n",
+				"message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.17;\"",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "HOME_3.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"HOME_3.sol": {
+				"ast": {
+					"absolutePath": "HOME_3.sol",
+					"exportedSymbols": {},
+					"id": 1,
+					"nodeType": "SourceUnit",
+					"nodes": [],
+					"src": "2105:0:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

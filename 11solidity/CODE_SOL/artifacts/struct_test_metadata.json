@@ -1,0 +1,44 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"CODE_SOL/07.sol": "struct_test"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"CODE_SOL/07.sol": {
+			"keccak256": "0xc2a566a797ba8d660da9cb7bf1d144f0cca02a58d7aca74910465d790583e6f3",
+			"urls": [
+				"bzz-raw://994277d6e8a7781a223f40097d73825960d7573f5f5600b34998707273caa0c5",
+				"dweb:/ipfs/QmbbDhMhqg54JiFcoaBowxfxeJfYg67BVfdP5LDypdxnbv"
+			]
+		}
+	},
+	"version": 1
+}

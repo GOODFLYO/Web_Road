@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint16",
+						"name": "input1",
+						"type": "uint16"
+					},
+					{
+						"internalType": "uint16",
+						"name": "input2",
+						"type": "uint16"
+					}
+				],
+				"name": "operation",
+				"outputs": [
+					{
+						"internalType": "uint16",
+						"name": "output",
+						"type": "uint16"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"CODE_SOL/Test_WorkSpace.sol": "AddressDemo"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"CODE_SOL/Test_WorkSpace.sol": {
+			"keccak256": "0xe5d93f6e94dce555e22ec2b61b58b96768052dfec1bafac2d7529a4510b84efc",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cc91266a8d3d2bddae17324528645e2ffa73f8603d91b062102f3dc7c3ea3cb9",
+				"dweb:/ipfs/QmYAkaKznFeKsGXooVqXgN8XwBbzRUPwat4mXvzy8fQLxn"
+			]
+		}
+	},
+	"version": 1
+}

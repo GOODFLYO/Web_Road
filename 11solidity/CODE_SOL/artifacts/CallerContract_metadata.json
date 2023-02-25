@@ -1,0 +1,83 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "calledTimes",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "calleeContractAddress",
+						"type": "address"
+					}
+				],
+				"name": "delegateCallDemo",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					},
+					{
+						"internalType": "bytes",
+						"name": "returnData",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"CODE_SOL/Test_WorkSpace.sol": "CallerContract"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"CODE_SOL/Test_WorkSpace.sol": {
+			"keccak256": "0x9c2a5fede97c3f0371f432272ab065eeb4927071be70a6d0e87852ce566ec732",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://58ec3c0d63fe1bd4b557fac2c923aa8e4013f3de8e6bcd4e2cc1edf6b765a223",
+				"dweb:/ipfs/Qmbscdhcbk2d8fLhLWSZNWuH1Qg6LqxkEiRfAkbT67GovT"
+			]
+		}
+	},
+	"version": 1
+}

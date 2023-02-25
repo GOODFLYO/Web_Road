@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "t1",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "t2",
+						"type": "string"
+					}
+				],
+				"name": "cpt",
+				"outputs": [
+					{
+						"internalType": "enum StringUtil.CompareResult",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"CODE_SOL/StringUtil.sol": "StringUtilTest"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"CODE_SOL/StringUtil.sol": {
+			"keccak256": "0xf73476c82d2067f50d0d7895b5043c2192073c5d2868470a4ad4297d99dd40ba",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d3c4d51a517f2f3da3ec27c9d197f352acc068146e250011b8ab5be6ecc39a59",
+				"dweb:/ipfs/QmTAxj3oAuJBotF2y7BoBGfMTVg2Xc8xcDBYRJrqJo9Aqy"
+			]
+		}
+	},
+	"version": 1
+}

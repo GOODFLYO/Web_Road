@@ -1,0 +1,68 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "doSomething",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "stateVar1",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"CODE_SOL/05.sol": "Locations"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"CODE_SOL/05.sol": {
+			"keccak256": "0xe56e2767c66b009f7a88f713e4782fb675f730b51196cf9796c2fc71da350490",
+			"urls": [
+				"bzz-raw://0a069bf129a065904013166000fba27edb231cdce156943fdef0307cc8b4cd40",
+				"dweb:/ipfs/Qmdnf9Xz5ER3KuYJNHpJKABthYN3ZpYYHgTNbziEmDFzq5"
+			]
+		}
+	},
+	"version": 1
+}

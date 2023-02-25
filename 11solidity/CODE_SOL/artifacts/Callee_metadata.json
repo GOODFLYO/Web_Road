@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "func",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"CODE_SOL/Test_WorkSpace.sol": "Callee"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"CODE_SOL/Test_WorkSpace.sol": {
+			"keccak256": "0xc57268e62d2892c9574b3fcf6c3a059b29b688524aad430027bfb47528713f96",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://98b02b04828323e067c6a15171bab69bfd2c85b9b2d2249860b59b9332cb6da4",
+				"dweb:/ipfs/QmbqnpLesGdubEbpEG4p2afQsPRNHJUrYvLPtWaqd9WcJy"
+			]
+		}
+	},
+	"version": 1
+}

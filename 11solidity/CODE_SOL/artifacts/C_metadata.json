@@ -1,0 +1,68 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "data",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "x",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"CODE_SOL/03.sol": "C"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"CODE_SOL/03.sol": {
+			"keccak256": "0x4c9238ffe0e7b7e6b4b5123d157442485aafa00258392a37af1eca73e4c7fa70",
+			"urls": [
+				"bzz-raw://7d33457654d80cb18170bd3e3736e82adb7a92cf977721a149665ef9ac2db559",
+				"dweb:/ipfs/QmNtV92LYuk7ENjoBNCAWazzZtKbDMGSitUZiYwgEmYdXX"
+			]
+		}
+	},
+	"version": 1
+}
