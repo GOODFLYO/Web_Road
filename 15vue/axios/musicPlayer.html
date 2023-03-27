@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>音悦播放器</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="player.css" />
+  </head>
+
+  <body>
+    <div id="player">
+      <div id="search">
+        <input
+          type="search"
+          value=""
+          v-model="query"
+          placeholder="请输入音乐名称"
+          @keyup.enter="searchMusic"
+        />
+        <input type="text" @click="searchMusic" value="Search" />
+      </div>
+      <div id="music">
+        <ul>
+          <li v-for="item in  musicList.slice(0,13)">
+            <a href="javascript:;" @click="playMusic(item.id)">
+              <b>{{item.name}}</b>
+            </a>
+            <span><i>{{item.artists[0].name}}</i></span>
+          </li>
+        </ul>
+        <!-- <img :src="songImg" alt=""> -->
+      </div>
+      <div class="play">
+        <audio
+          controls="controls"
+          :src="songAddress"
+          autoplay="autoplay"
+        ></audio>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+      var player = new Vue({
+        el: "#player",
+        data: {
+          query: "",
+          songId: "",
+          songAddress: "",
+          // songImg: "",
+          musicList: [],
+        },
+        methods: {
+          searchMusic: async function () {
+            var that = this;
+            await axios
+              .get("https://autumnfish.cn/search?keywords=" + that.query)
+              .then((response) => {
+                // that.songId = response.data.result.songs[0].id;
+                // that.songImg = response.data.result.songs[0].id;
+                that.musicList = response.data.result.songs;
+              })
+              .catch((error) => {
+                console.log(error);
+              });
+          },
+
+          playMusic: function (id) {
+            // console.log(id);
+
+            this.songAddress =
+              "http://api.starrobotwl.com/api/wymusic.php?id=" + id;
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+
+      p {
+        color: red;
+        text-align: left; /*文本左对齐*/
+        font-size: 18px; /*字体大小 18 像素*/
+        line-height: 25px; /*行高 25 像素*/
+        text-indent: 2em; /*首行缩进2个文字大小空间*/
+        width: 500px; /*段落宽度 500 像素*/
+        margin: 0 auto; /*浏览器下居中*/
+        margin-bottom: 20px; /*段落下边距 20 像素*/
+      }
+    

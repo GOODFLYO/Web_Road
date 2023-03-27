@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myvue</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <img
+        src="../vue_base/static/img/avt.JPG"
+        alt="frog"
+        v-show="isShow"
+        style="width: 200px"
+      />
+      <button @click="changeIsShow">切换小青蛙</button>
+    </div>
+
+    <script>
+      var app = new Vue({
+        el: "#app",
+        data: {
+          isShow: false,
+        },
+        methods: {
+          changeIsShow: function () {
+            this.isShow = !this.isShow;
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

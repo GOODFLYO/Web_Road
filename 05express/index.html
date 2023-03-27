@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>跨域</title>
+    <script src="https://labfile.oss.aliyuncs.com/courses/3774/jquery-3.6.0.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #result {
+        width: 200px;
+        height: 100px;
+        border: solid 1px #90b;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button id="btnGET">GET</button>
+    <button id="btnPOST">POST</button>
+    <button id="btnDELETE">DELETE</button>
+    <button id="btnJSONP">JSONP</button>
+
+    <script>
+      $(function () {
+        // 测试get
+        $("#btnGET").on("click", function () {
+          $.ajax({
+            type: "GET",
+            url: "http://127.0.0.1/get",
+            data: {
+              api: "get",
+              name: "zs",
+              age: 20,
+            },
+            success: function (res) {
+              console.log(res);
+            },
+          });
+        });
+
+        // 测试post
+        $("#btnPOST").on("click", function () {
+          $.ajax({
+            type: "POST",
+            url: "http://127.0.0.1/post",
+            data: {
+              api: "post",
+              name: "ls",
+              age: 30,
+            },
+            success: function (res) {
+              console.log(res);
+            },
+          });
+        });
+
+        $("#btnDELETE").on("click", function () {
+          $.ajax({
+            type: "DELETE",
+            url: "http://127.0.0.1/delete",
+
+            success: function (res) {
+              console.log(res);
+            },
+          });
+        });
+
+        // 这个调用不成功，为什么
+        $("#btnJSONP").on("click", function () {
+          $.ajax({
+            type: "GET",
+            url: "http://127.0.0.1/api/jsonp",
+            dataType: "jsonp",
+
+            success: function (res) {
+              console.log(res);
+            },
+          });
+        });
+
+      });
+    </script>
+  </body>
+</html>

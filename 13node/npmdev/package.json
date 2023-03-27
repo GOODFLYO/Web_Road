@@ -1,0 +1,11 @@
+{
+  "name": "npmdev_zyn",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "提供了格式化、sayhello相关的功能",
+  "keywords": [
+    "dataformat",
+    "sayhello"
+  ],
+  "license": "ISC"
+}

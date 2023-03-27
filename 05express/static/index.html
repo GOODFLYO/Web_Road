@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ajax get</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #result {
+        width: 200px;
+        height: 100px;
+        border: solid 1px #90b;
+      }
+    </style>
+  </head>
+  <body>
+    <button>请点击我！</button>
+    <div id="result"></div>
+
+    <!-- <script>
+      var btn = document.getElementsByTagName("button")[0];
+      // console.log(but);
+      var res = document.getElementById("result");
+      console.log(res);
+
+      btn.addEventListener("click", function () {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "http://127.0.0.1:8000");
+        xhr.send();
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4) {
+            if (xhr.status >= 200 && xhr.status < 300) {
+              res.innerHTML = xhr.response;
+            }
+          }
+        };
+      });
+    </script> -->
+  </body>
+</html>

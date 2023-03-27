@@ -1,21 +1,17 @@
-//引入express
 const express = require("express");
-//创建应用对象
+const router = require("./router");
+// console.log(router);
+
 const app = express();
-//创建路由规则
-app.get("/", (request, response) => {
-  //设置响应头 允许跨域
-  response.setHeader('Access-Control-Allow-Origin','*');
-  
-  //设置响应
-  var mess = {
-    name: 'zyn',
-    sex: 'boy'
-  }
-  var m =   JSON.stringify(mess);
-  response.send(m);
+app.use((req, res, next) => {
+  req.on("data", function () {
+    // console.log(data);
+  });
+  next()
 });
-//app监听端口启动服务
-app.listen(8000, () => {
-  console.log("服务已经启动，8000端口监听中···");
+// app.use(express.static('static/blogConfig'))
+app.use(router);
+
+app.listen(80, () => {
+  console.log("express server running at http://127.0.0.1");
 });
